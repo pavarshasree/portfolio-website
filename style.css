@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#0f172a;
+    color:#fff;
+    line-height:1.7;
+}
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#9333ea;
+    border-radius:10px;
+}
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    padding:20px 10%;
+    background:rgba(15,23,42,0.9);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    color:#c084fc;
+    font-size:30px;
+    font-weight:700;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#c084fc;
+}
+
+section{
+    min-height:100vh;
+    padding:120px 10%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+h2{
+    text-align:center;
+    font-size:40px;
+    margin-bottom:40px;
+    color:#c084fc;
+}
+
+@media(max-width:900px){
+    .home{
+        flex-direction:column;
+    }
+}
+
+.home-content{
+    flex:1;
+}
+
+.home-content h1{
+    font-size:55px;
+}
+
+.home-content span{
+    color:#c084fc;
+}
+
+.home-content h3{
+    margin:15px 0;
+    color:#d8b4fe;
+}
+
+.home-content p{
+    color:#d1d5db;
+}
+
+.home-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.home-image img{
+    width:350px;
+    height:350px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid #9333ea;
+    box-shadow:0 0 35px #9333ea;
+}
+
+.buttons{
+    margin-top:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 30px;
+    background:#9333ea;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    margin-right:15px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#7e22ce;
+    transform:translateY(-4px);
+}
+
+#about{
+    min-height:100vh;
+    padding-top:120px;
+    text-align:center;
+}
+
+#about p{
+    max-width:800px;
+    margin:auto;
+}
+
+.skill-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.skill-card{
+    background:rgba(255,255,255,0.08);
+    padding:25px;
+    text-align:center;
+    border-radius:15px;
+    border:1px solid rgba(255,255,255,0.1);
+    transition:0.4s;
+}
+
+.skill-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px #9333ea;
+}
+
+.project-card{
+    background:rgba(255,255,255,0.08);
+    padding:25px;
+    border-radius:15px;
+    margin-bottom:25px;
+    transition:0.4s;
+}
+
+.project-card:hover{
+    transform:scale(1.03);
+    box-shadow:0 0 20px #9333ea;
+}
+
+.project-card h3{
+    color:#d8b4fe;
+}
+
+.experience-card{
+    background:rgba(255,255,255,0.08);
+    padding:25px;
+    margin-bottom:20px;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.experience-card:hover{
+    box-shadow:0 0 20px #9333ea;
+}
+
+#certificates ul{
+    list-style:none;
+}
+
+#certificates li{
+    background:rgba(255,255,255,0.08);
+    padding:20px;
+    margin-bottom:15px;
+    border-radius:10px;
+}
+
+#achievements ul{
+    list-style:none;
+}
+
+#achievements li{
+    background:rgba(255,255,255,0.08);
+    padding:20px;
+    margin-bottom:15px;
+    border-radius:10px;
+}
+
+#contact{
+    text-align:center;
+}
+
+#contact p{
+    margin:15px 0;
+    color:#d1d5db;
+}
+
+footer{
+    background:#020617;
+    text-align:center;
+    padding:25px;
+    color:#94a3b8;
+}
+
+@media(max-width:900px){
+
+    nav ul{
+        display:none;
+    }
+
+    .home{
+        flex-direction:column-reverse;
+        text-align:center;
+    }
+
+    .home-content h1{
+        font-size:40px;
+    }
+
+    .home-image img{
+        width:250px;
+    }
+
+    h2{
+        font-size:32px;
+    }
+}
+
+nav ul li a.active{
+    color:#c084fc;
+}
+
+body{
+    opacity:0;
+    transition:1s;
+}
+
+.contact-info{
+    margin-top:30px;
+    text-align:center;
+}
+
+.contact-info p{
+    margin:15px 0;
+    color:#d1d5db;
+}
+
+.contact-info a{
+    color:#c084fc;
+    text-decoration:none;
+}
+
+.contact-info a:hover{
+    text-decoration:underline;
+}
