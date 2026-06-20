@@ -6,9 +6,7 @@ A modern and responsive personal portfolio website showcasing my skills, project
 
 Add your GitHub Pages link here:
 
-```
 https://pavarshasree.github.io/portfolio-website/
-```
 
 ## 📌 Features
 
